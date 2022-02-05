@@ -1,0 +1,42 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+@import 'base/variables';
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import 'blocks/global';
+@import 'blocks/advantages';
+@import 'blocks/btns';
+@import 'blocks/title';
+@import 'blocks/subtitle';
+@import 'blocks/card';
+@import 'blocks/privilege';
+@import 'blocks/organization';
+@import 'blocks/devaider';
+@import 'blocks/base';
+@import 'blocks/price';
+@import 'blocks/delivery';
+@import 'blocks/consultation';
+@import 'blocks/form';
+
+
+@import 'blocks/scheme';
+@import 'blocks/metrikc';
+@import 'blocks/slider';
+
+@import 'blocks/slid';
+@import 'blocks/write';
+@import 'blocks/map';
+@import 'blocks/footer';
+
+@import 'blocks/medea/medea';

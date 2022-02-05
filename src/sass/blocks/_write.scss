@@ -1,0 +1,37 @@
+.write {
+    padding: 60px 0 80px 0;
+    position: relative;
+    min-height: 438px;
+    background: url('../img/wtite/write_bg.jpg') no-repeat 50% / cover;
+    &__block {
+        width: 896px;
+        margin: 0 auto;
+        z-index: 2;
+    }
+    &__strip {
+        padding-top: 17px;
+        height: 68px;
+        background-color: #25333c;      
+    }
+    &__head {
+        color: #ffffff;
+        font-size: 19px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 19px;
+        text-transform: uppercase;
+    }
+    &__subhead {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 17px;
+        text-transform: uppercase;
+    }
+    &__owerlay {
+        height: 230px;
+        background-color: #ffffff;
+        opacity: 0.7;
+    }
+}

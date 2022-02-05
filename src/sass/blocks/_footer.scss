@@ -1,0 +1,45 @@
+.footer {
+    padding: 25px 0 27px 0;
+    background-color: #25333c;
+    &__box {
+        margin-top: 55px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__block {
+        width: 550px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link {
+        opacity: 0.6;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 17px;
+        &:hover {
+            color: #ffffff;
+        }
+    }
+    &__politic {
+        color: $main-color;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 17px;
+        text-decoration: underline;
+        &:hover {
+            color: $color-hover;
+            transition: .3s all;
+        }
+    }
+    &__city {
+        opacity: 0.6;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 17px;
+        span {
+            margin-right: 6px;
+        }
+    }
+}

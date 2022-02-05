@@ -1,0 +1,30 @@
+.consultation {
+    padding-bottom: 80px;
+    &__block {
+        margin-top: 80px;
+        position: relative;
+        height: 166px;
+        border: 1px solid #898989;
+    }
+    &__wrap-icon {
+        position: absolute;
+        width: 130px;
+        top: -55px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+    }
+    &__icon {
+        width: 102px;
+        height: 102px;
+        margin: 0 auto;
+        border: 1px solid #e93b3b;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            max-height: 61px;
+        }
+    }
+}

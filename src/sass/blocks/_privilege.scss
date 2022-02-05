@@ -1,0 +1,43 @@
+.privilege {
+    padding: 57px 0 50px 0;
+    background-color: #f3f3f3;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__block {
+        width: 535px;
+    }
+    &__item {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        img {
+            max-width: 65px;
+            max-height: 65px;
+            object-fit: cover;
+        }
+    }
+    &__text {
+        width: 455px;
+    }
+    &__label {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: normal;
+        color: $main-color;
+    }
+    &__descr {
+        margin-top: 5px;
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 22px;
+    }
+}

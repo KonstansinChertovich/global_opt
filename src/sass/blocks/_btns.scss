@@ -1,0 +1,35 @@
+.btns {
+    width: 160px;
+    height: 45px;
+    background: $main-color;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22.04px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 25px;
+    transition: 0.3s all;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        
+        background: $color-hover;
+        
+    }
+    &_global {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 85px;
+        width: 230px;
+        height: 57px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 17px;
+    }
+    &_write {
+        width: 180px;
+    }
+}

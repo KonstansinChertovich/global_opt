@@ -1,0 +1,71 @@
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background: url('../img/map/map_bg.jpg') no-repeat center / cover;
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__circle {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        margin-right: 40px;
+        border-radius: 50%;
+        background-color: $main-color;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -33px;
+            left: 6px;
+            border: 19px solid transparent; border-top: 23px solid $main-color;
+        }
+    }
+    &__address {
+        position: relative;
+        width: 310px;
+        height: 158px;
+        background-color: #ffffff;
+        border-radius: 7px;
+        padding: 20px 30px;
+        margin-bottom: 0;
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        span {
+            display: block;
+            margin-bottom: 5px;
+            color: #ec644b;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: normal;
+        }
+        a {
+            display: block;
+            margin-top: 5px;
+            color: #ec644b;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: normal;
+            text-decoration: underline;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: -43px;
+            transform: translateY(-50%);
+            border: 20px solid transparent;
+            border-right: 23px solid #ffff;
+        }
+    }
+}

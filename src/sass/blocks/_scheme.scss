@@ -1,0 +1,40 @@
+.scheme {
+    padding: 50px 0 15px 0;
+    background-color: #f3f3f3;
+    &__box {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__cart {
+        width: 250px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+    &__icon {
+        height: 58px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            max-height: 58px;
+        }
+    }
+    &__title {
+        margin-top: 5px;
+        color: #ec644b;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+    }
+    &__text {
+        margin-top: 5px;
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        text-align: center;
+    }
+}

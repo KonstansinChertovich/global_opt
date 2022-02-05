@@ -1,0 +1,44 @@
+.base {
+    padding: 58px 0 75px 0;
+    &_agent {
+        background: url('../img/base/agent_bg.jpg') no-repeat 50% / cover;
+    }
+    &_manager {
+        background: url('../img/base/manager/manager_bg.jpg') no-repeat 50% / cover;
+    }
+    &__icon {
+        position: relative;
+        width: 102px;
+        height: 102px;
+        border-radius: 50%;
+        border: 1px solid #ffff;
+        margin: 0 auto;
+        img {
+            position: absolute;
+            max-width: 102px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__descr {
+        width: 984px;
+        margin: 0 auto;
+    }
+    &__name {
+        margin-top: 20px;
+        color: #ffff;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 23px;
+        text-align: center;
+    }
+    &__text {
+        margin-top: 22px;
+        color: #ffffff;
+        font-size: 19px;
+        font-weight: 300;
+        line-height: 27px;
+        text-align: center;
+    }
+}
