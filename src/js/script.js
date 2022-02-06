@@ -47,6 +47,92 @@ btnPrev.addEventListener('click', (e) => {
 });
 
 
+// classes sample section price
+class DeliveruCart {
+    constructor(name, src, alt, rate, price, text ,btntext, parent, ...classes) {
+        this.name = name,
+        this.src = src, 
+        this.alt = alt, 
+        this.rate = rate, 
+        this.price = price,
+        this.text = text,
+        this.btntext = btntext,
+        this.parent = parent = document.querySelector(parent),
+        this.classes = classes
+    }
+
+    render() {
+        const element = document.createElement('div');
+        if(this.classes.length === 0) {
+            this.classes = 'delivery__block';
+            element.classList.add(this.classes);
+        }else {
+            this.classes.forEach(item => element.classList.add(item));
+        }
+    
+        element.innerHTML = `
+            <div class="delivery__name">${this.name}</div>
+            <div class="delivery__icon"><img src=${this.src} alt=${this.alt}></div>
+            <div class="delivery__rate">
+                ${this.rate}
+                <span>${this.price}</span>
+            </div>
+            <div class="delivery__text">
+                ${this.text} 
+            </div>
+            <div class="delivery__btn"><button class="btns">${this.btntext}</button></div>
+        `;
+        
+        this.parent.append(element);
+    }
+}
+
+new DeliveruCart(
+    'Доставка морем',
+    '"icons/delivery/ship.png"',
+    '"ship"',
+    'Доставка 35-50 дней',
+    'от 0,3$ за 1 кг',
+    'Морские перевозки грузов из Китая в Россию за 35 дней с прохождением таможни',
+    'Подробнее',
+    '.delivery__wrapper',
+    'delivery__block'
+).render();
+new DeliveruCart(
+    'Ж/Д доставка',
+    '"icons/delivery/train.png"',
+    '"train"',
+    'Доставка 15-28 дней',
+    'от 1$ за 1 кг',
+    'ЖД перевозки грузов из Китая в Россию от 2 недель с прохождением таможни',
+    'Подробнее',
+    '.delivery__wrapper',
+    'delivery__block'
+).render();
+new DeliveruCart(
+    'Автодоставка',
+    '"icons/delivery/truck.png"',
+    '"truck"',
+    'Доставка 12-20 дня',
+    'от 1$ за 1 кг',
+    'Автоперевозки грузов из Китая в Россию от 2 недель с прохождением таможни',
+    'Подробнее',
+    '.delivery__wrapper',
+    'delivery__block'
+).render();
+new DeliveruCart(
+    'Авиа доставка',
+    '"icons/delivery/ship.png"',
+    '"ship"',
+    'Доставка 1-12 дней',
+    'от 6$ за 1 кг',
+    'Авиаперевозки грузов из Китая в Россию до 2 недель с прохождением таможни',
+    'Подробнее',
+    '.delivery__wrapper',
+    'delivery__block'
+).render();
+
+
 
 // const slider = document.querySelector('.slid'),
 //     slidTrack =document.querySelector('.slid__track'),
