@@ -1,6 +1,8 @@
-const btnPrev = document.querySelector('.slider__prev'),
-      btnNext = document.querySelector('.slider__next'),
-      slaidItems = document.querySelectorAll('.slider__items');
+document.addEventListener('DOMContentLoaded', () => {
+
+    const btnPrev = document.querySelector('.slider__prev'),
+          btnNext = document.querySelector('.slider__next'),
+          slaidItems = document.querySelectorAll('.slider__items');
 
 btnNext.addEventListener('click', (e) => {
     e.preventDefault();
@@ -68,8 +70,8 @@ class DeliveruCart {
             element.classList.add(this.classes);
         }else {
             this.classes.forEach(item => element.classList.add(item));
-        }
-    
+        }   
+
         element.innerHTML = `
             <div class="delivery__name">${this.name}</div>
             <div class="delivery__icon"><img src=${this.src} alt=${this.alt}></div>
@@ -82,7 +84,7 @@ class DeliveruCart {
             </div>
             <div class="delivery__btn"><button class="btns">${this.btntext}</button></div>
         `;
-        
+
         this.parent.append(element);
     }
 }
@@ -205,3 +207,6 @@ new DeliveruCart(
 //         b.disabled = false;
 //     }
 // }
+});
+
+
